@@ -1,19 +1,41 @@
 import React from "react";
-import MovieItem from './components/movieitem';
+import MovieItem from "./components/movieitem";
+import { moviesData } from "./components/moviesData";
 import "./App.css";
 
-const movie = {
-  title: "Avengers: Infinity War",
-  vote_avetage: 8.5,
-  image: "https://image.tmdb.org/t/p/w500/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg",
-  overview:
-    "As the Avengers and their allies have continued to protect the world from threats",
-};
+class App extends React.Component {
+  constructor() {
+    super();
 
-function App() {
-  return <div className="App">
-    <MovieItem data={movie}/>
-  </div>;
+    this.state = {
+      movies: moviesData,
+    };
+  }
+  removeMovie = (movie) => {
+    const updateMovies = this.state.movies.filter((item) => {
+      return item.id !== movie.id;
+    });
+    this.setState({
+      movies: updateMovies,
+    });
+  }
+  render() {
+    return (
+      <div className="App">
+        <div>
+          {this.state.movies.map((movie) => {
+            return (
+              <MovieItem
+                key={movie.id}
+                movie={movie}
+                removeMovie={this.removeMovie}
+              />
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
