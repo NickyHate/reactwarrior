@@ -1,6 +1,6 @@
 import React from "react";
 import MovieItem from "./components/movieitem";
-import { moviesData } from "./components/moviesData";
+/*import { moviesData } from "./components/moviesData";*/
 import "./App.css";
 
 class App extends React.Component {
@@ -8,9 +8,22 @@ class App extends React.Component {
     super();
 
     this.state = {
-      movies: moviesData,
+      movies: [],
       moviesWillWatch: [],
     };
+  }
+  componentDidMount() {
+    fetch(
+      "https://api.themoviedb.org/3/discover/movie?api_key=3f4ca4f3a9750da53450646ced312397"
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        this.setState({
+          movies: data.results,
+        });
+      });
   }
   removeMovie = (movie) => {
     const updateMovies = this.state.movies.filter((item) => {
@@ -22,6 +35,14 @@ class App extends React.Component {
   };
   addMovieToWillWatch = (movie) => {
     const updateMoviesWillWatch = [...this.state.moviesWillWatch, movie];
+    this.setState({
+      moviesWillWatch: updateMoviesWillWatch,
+    });
+  };
+  removeMovieFromWillWatch = (movie) => {
+    const updateMoviesWillWatch = this.state.moviesWillWatch.filter((item) => {
+      return item.id !== movie.id;
+    });
     this.setState({
       moviesWillWatch: updateMoviesWillWatch,
     });
@@ -39,6 +60,7 @@ class App extends React.Component {
                       movie={movie}
                       removeMovie={this.removeMovie}
                       addMovieToWillWatch={this.addMovieToWillWatch}
+                      removeMovieFromWillWatch={this.removeMovieFromWillWatch}
                     />
                   </div>
                 );
