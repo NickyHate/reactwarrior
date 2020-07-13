@@ -1,4 +1,7 @@
-.btn--like{
+.btn--like {
   background: blue;
   color: white;
+}
+.nav-item {
+  cursor: pointer;
 }
