@@ -1,6 +1,6 @@
 import React from "react";
 import MovieItem from "./components/movieitem";
-/*import { moviesData } from "./components/moviesData";*/
+import MovieTabs from "./components/movieTabs";
 import "./App.css";
 
 class App extends React.Component {
@@ -10,11 +10,12 @@ class App extends React.Component {
     this.state = {
       movies: [],
       moviesWillWatch: [],
+      sort_by: "popularity.desc"
     };
   }
   componentDidMount() {
     fetch(
-      "https://api.themoviedb.org/3/discover/movie?api_key=3f4ca4f3a9750da53450646ced312397"
+      "https://api.themoviedb.org/3/discover/movie?api_key=3f4ca4f3a9750da53450646ced312397&sort_by={this.state.sort_by}"
     )
       .then((response) => {
         return response.json();
@@ -52,7 +53,10 @@ class App extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col-9">
-            <div className="row">
+            <div className="row mb-4">
+              <div className="col-12">
+                <MovieTabs />
+              </div>
               {this.state.movies.map((movie) => {
                 return (
                   <div className="col-6 mb-4" key={movie.id}>
