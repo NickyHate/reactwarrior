@@ -27,6 +27,21 @@ class App extends React.Component {
         });
       });
   }
+  componentDidUpdate(prevProps, prevState){
+    if(prevState.sort_by !== this.state.sort_by){
+      fetch(
+        `${API_URL}/discover/movie?api_key=${API_KEY_3}&sort_by=${this.state.sort_by}`
+      )
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          this.setState({
+            movies: data.results,
+          });
+        });
+    }
+  }
   removeMovie = (movie) => {
     const updateMovies = this.state.movies.filter((item) => {
       return item.id !== movie.id;
@@ -59,8 +74,8 @@ class App extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col-9">
-            <div className="row mb-4">
-              <div className="col-12">
+            <div className="row">
+              <div className="col-12  mb-4">
                 <MovieTabs
                   sort_by={this.state.sort_by}
                   updateSortBy={this.updateSortBy}
