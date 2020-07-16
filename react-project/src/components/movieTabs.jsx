@@ -1,18 +1,20 @@
 import React from "react";
+import classNames from "classnames";
 
 const MovieTabs = (props) => {
   const { sort_by, updateSortBy } = props;
   const handleClick = (value) => () => {
     updateSortBy(value);
   };
-  const getclassLink = (value) => {
-    return `nav-link ${sort_by === value ? "active" : ""}`;
-  };
+  let classes = sort => classNames("nav-link", {
+      active: sort_by === sort
+  })
+
   return (
     <ul className="tabs nav nav-pills">
       <li className="nav-item">
         <div
-          className={getclassLink("popularity.desc")}
+          className={classes("popularity.desc")}
           onClick={handleClick("popularity.desc")}
         >
           Popularity
@@ -20,7 +22,7 @@ const MovieTabs = (props) => {
       </li>
       <li className="nav-item">
         <div
-          className={getclassLink("revenue.desc")}
+          className={classes("revenue.desc")}
           onClick={handleClick("revenue.desc")}
         >
           Revenue desc
@@ -28,7 +30,7 @@ const MovieTabs = (props) => {
       </li>
       <li className="nav-item">
         <div
-          className={getclassLink("vote_average.desc")}
+          className={classes("vote_average.desc")}
           onClick={handleClick("vote_average.desc")}
         >
           Vote average desc
