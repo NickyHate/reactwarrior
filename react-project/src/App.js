@@ -1,6 +1,7 @@
 import React from "react";
 import MovieItem from "./components/movieitem";
 import MovieTabs from "./components/movieTabs";
+import Pagination from "./components/pagination";
 import { API_URL, API_KEY_3 } from "./utils/api";
 import "./App.css";
 
@@ -12,6 +13,8 @@ class App extends React.Component {
       movies: [],
       moviesWillWatch: [],
       sort_by: "popularity.desc",
+      currentPage: 1,
+      totalPages: 1
     };
   }
   componentDidMount() {
@@ -67,12 +70,15 @@ class App extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col-9">
-            <div className="row">
-              <div className="col-12  mb-4">
+            <div className="row align-items-center">
+              <div className="col-6  mb-4">
                 <MovieTabs
                   sort_by={this.state.sort_by}
                   updateSortBy={this.updateSortBy}
                 />
+              </div>
+              <div className="col-6 mb-4">
+                <Pagination/>
               </div>
               {this.state.movies.map((movie) => {
                 return (
