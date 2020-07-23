@@ -69,20 +69,20 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-9">
+          <div className="col-lg-9">
             <div className="row align-items-center">
-              <div className="col-6  mb-4">
+              <div className="col-lg-6  mb-4">
                 <MovieTabs
                   sort_by={this.state.sort_by}
                   updateSortBy={this.updateSortBy}
                 />
               </div>
-              <div className="col-6 mb-4">
+              <div className="col-lg-6 mb-4">
                 <Pagination/>
               </div>
               {this.state.movies.map((movie) => {
                 return (
-                  <div className="col-6 mb-4" key={movie.id}>
+                  <div className="col-lg-6 col-12 mb-4" key={movie.id}>
                     <MovieItem
                       movie={movie}
                       removeMovie={this.removeMovie}
@@ -94,7 +94,7 @@ class App extends React.Component {
               })}
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-lg-3">
             <p>Will watch: {this.state.moviesWillWatch.length}</p>
           </div>
         </div>
