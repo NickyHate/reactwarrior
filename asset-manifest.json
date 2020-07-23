@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/reactwarrior/static/css/main.162123f6.chunk.css",
-    "main.js": "/reactwarrior/static/js/main.49786b8f.chunk.js",
-    "main.js.map": "/reactwarrior/static/js/main.49786b8f.chunk.js.map",
+    "main.js": "/reactwarrior/static/js/main.24dcda62.chunk.js",
+    "main.js.map": "/reactwarrior/static/js/main.24dcda62.chunk.js.map",
     "runtime-main.js": "/reactwarrior/static/js/runtime-main.eefe4895.js",
     "runtime-main.js.map": "/reactwarrior/static/js/runtime-main.eefe4895.js.map",
     "static/css/2.af3c1da9.chunk.css": "/reactwarrior/static/css/2.af3c1da9.chunk.css",
     "static/js/2.d8640974.chunk.js": "/reactwarrior/static/js/2.d8640974.chunk.js",
     "static/js/2.d8640974.chunk.js.map": "/reactwarrior/static/js/2.d8640974.chunk.js.map",
     "index.html": "/reactwarrior/index.html",
-    "precache-manifest.3cf70c89aa72d2d1a2676576ab894166.js": "/reactwarrior/precache-manifest.3cf70c89aa72d2d1a2676576ab894166.js",
+    "precache-manifest.4f9524ca9d13e3582d8fe425364daf20.js": "/reactwarrior/precache-manifest.4f9524ca9d13e3582d8fe425364daf20.js",
     "service-worker.js": "/reactwarrior/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/reactwarrior/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.162123f6.chunk.css.map": "/reactwarrior/static/css/main.162123f6.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.d8640974.chunk.js",
     "static/css/main.162123f6.chunk.css",
-    "static/js/main.49786b8f.chunk.js"
+    "static/js/main.24dcda62.chunk.js"
   ]
 }
