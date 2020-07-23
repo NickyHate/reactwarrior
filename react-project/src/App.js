@@ -69,15 +69,15 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-lg-9">
+          <div className="col-lg-9 col-12">
             <div className="row align-items-center">
-              <div className="col-lg-6  mb-4">
+              <div className="col-lg-6 col-12 mb-4">
                 <MovieTabs
                   sort_by={this.state.sort_by}
                   updateSortBy={this.updateSortBy}
                 />
               </div>
-              <div className="col-lg-6 mb-4">
+              <div className="col-lg-6 col-12 mb-4">
                 <Pagination/>
               </div>
               {this.state.movies.map((movie) => {
@@ -94,7 +94,7 @@ class App extends React.Component {
               })}
             </div>
           </div>
-          <div className="col-lg-3">
+          <div className="col-lg-3 col-12">
             <p>Will watch: {this.state.moviesWillWatch.length}</p>
           </div>
         </div>
