@@ -53,6 +53,7 @@ class MovieItem extends React.Component {
           <button
             type="button"
             onClick={this.props.removeMovie.bind(null, this.props.movie)}
+            className="btn-delete"
           >
             Delete movie
           </button>
