@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/reactwarrior/static/css/main.673c211d.chunk.css",
-    "main.js": "/reactwarrior/static/js/main.a2308116.chunk.js",
-    "main.js.map": "/reactwarrior/static/js/main.a2308116.chunk.js.map",
+    "main.css": "/reactwarrior/static/css/main.0bc075fe.chunk.css",
+    "main.js": "/reactwarrior/static/js/main.dcaaa245.chunk.js",
+    "main.js.map": "/reactwarrior/static/js/main.dcaaa245.chunk.js.map",
     "runtime-main.js": "/reactwarrior/static/js/runtime-main.eefe4895.js",
     "runtime-main.js.map": "/reactwarrior/static/js/runtime-main.eefe4895.js.map",
     "static/css/2.af3c1da9.chunk.css": "/reactwarrior/static/css/2.af3c1da9.chunk.css",
     "static/js/2.d8640974.chunk.js": "/reactwarrior/static/js/2.d8640974.chunk.js",
     "static/js/2.d8640974.chunk.js.map": "/reactwarrior/static/js/2.d8640974.chunk.js.map",
     "index.html": "/reactwarrior/index.html",
-    "precache-manifest.309f4c60d46a0b0673a81e88ba9c3ee3.js": "/reactwarrior/precache-manifest.309f4c60d46a0b0673a81e88ba9c3ee3.js",
+    "precache-manifest.4dc0de1d51138fd0d689d5f320b913c6.js": "/reactwarrior/precache-manifest.4dc0de1d51138fd0d689d5f320b913c6.js",
     "service-worker.js": "/reactwarrior/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/reactwarrior/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.673c211d.chunk.css.map": "/reactwarrior/static/css/main.673c211d.chunk.css.map",
+    "static/css/main.0bc075fe.chunk.css.map": "/reactwarrior/static/css/main.0bc075fe.chunk.css.map",
     "static/js/2.d8640974.chunk.js.LICENSE.txt": "/reactwarrior/static/js/2.d8640974.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.eefe4895.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.d8640974.chunk.js",
-    "static/css/main.673c211d.chunk.css",
-    "static/js/main.a2308116.chunk.js"
+    "static/css/main.0bc075fe.chunk.css",
+    "static/js/main.dcaaa245.chunk.js"
   ]
 }
