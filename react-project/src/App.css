@@ -27,6 +27,9 @@
   cursor: pointer;
   margin-right: 15px;
 }
+.page-link{
+  cursor: pointer;
+}
 
 @media screen and (max-width: 576px){
   .nav{
