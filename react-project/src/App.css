@@ -1,3 +1,6 @@
+h6{
+  height: 60px;
+}
 .btn--like {
   background: blue;
   color: white;
@@ -30,6 +33,10 @@
 .page-link{
   cursor: pointer;
 }
+.card-img-top{ 
+  width: 395px;
+  height: 222px;
+} 
 
 @media screen and (max-width: 576px){
   .nav{
@@ -46,4 +53,8 @@
   .btn{
     font-size: 0.9rem!important;
   }
+  .card-img-top{ 
+    width: 288px;
+    height: 162px;
+  } 
 }
