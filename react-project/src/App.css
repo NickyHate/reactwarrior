@@ -22,6 +22,21 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 .nav-item {
   cursor: pointer;
+}
+
+@media screen and (max-width: 576px){
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.6rem;
+  }
+  .btn-delete{
+    font-size: 0.9rem;
+  }
+  .btn{
+    font-size: 0.9rem!important;
+  }
 }
