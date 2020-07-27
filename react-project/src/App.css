@@ -25,6 +25,7 @@
 
 .nav-item {
   cursor: pointer;
+  margin-right: 15px;
 }
 
 @media screen and (max-width: 576px){
@@ -32,6 +33,9 @@
     display: flex;
     justify-content: space-between;
     font-size: 0.6rem;
+  }
+  .nav-item{
+    margin-right: 0;
   }
   .btn-delete{
     font-size: 0.9rem;

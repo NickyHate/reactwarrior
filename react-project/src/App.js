@@ -14,7 +14,7 @@ class App extends React.Component {
       moviesWillWatch: [],
       sort_by: "popularity.desc",
       currentPage: 1,
-      totalPages: 1
+      totalPages: 1,
     };
   }
   componentDidMount() {
@@ -70,16 +70,15 @@ class App extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col-lg-9 col-12">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-12 mb-4">
+            <div className="row">
+              <div className="col-lg-12 col/div>-12 mb-4">
                 <MovieTabs
                   sort_by={this.state.sort_by}
                   updateSortBy={this.updateSortBy}
                 />
               </div>
-              <div className="col-lg-6 col-12 mb-4">
-                <Pagination/>
-              </div>
+            </div>
+            <div className="row align-items-center">
               {this.state.movies.map((movie) => {
                 return (
                   <div className="col-lg-6 col-12 mb-4" key={movie.id}>
@@ -97,6 +96,9 @@ class App extends React.Component {
           <div className="col-lg-3 col-12">
             <p>Will watch: {this.state.moviesWillWatch.length}</p>
           </div>
+        </div>
+        <div className="col-lg-6 col-12 mb-4">
+          <Pagination />
         </div>
       </div>
     );
