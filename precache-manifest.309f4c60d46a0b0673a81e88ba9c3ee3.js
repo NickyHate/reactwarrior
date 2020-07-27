@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "376b9f3e0e060f3b29b2435f3ea536d0",
+    "revision": "691e0b495c9898a41674a364fa168f75",
     "url": "/reactwarrior/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactwarrior/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "8f4aa74fb3e379ad3d55",
-    "url": "/reactwarrior/static/css/main.09498784.chunk.css"
+    "revision": "81a672e580b67d6c596a",
+    "url": "/reactwarrior/static/css/main.673c211d.chunk.css"
   },
   {
     "revision": "42731e17a5ae5bae48b8",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactwarrior/static/js/2.d8640974.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8f4aa74fb3e379ad3d55",
-    "url": "/reactwarrior/static/js/main.504f84b7.chunk.js"
+    "revision": "81a672e580b67d6c596a",
+    "url": "/reactwarrior/static/js/main.a2308116.chunk.js"
   },
   {
     "revision": "9b69d71ba5ac86d5ed3b",
